@@ -3,17 +3,54 @@
 <head>
   <title>WEB1 - CSS</title>
   <meta charset="utf-8">
+  <style>
+  body {
+    margin:0;
+  }
+  a {
+    color:black;
+    text-decoration: none;
+  }
+
+  h1 {
+    font-size:100px;
+    text-align:center;
+    border-bottom:1px solid gray;
+    margin:0;
+    padding:20px;
+  }
+  ol{
+    border-right:1px solid gray;
+    width:70px;
+    margin:0;
+    padding:20px;
+  }
+  #grid{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+  }
+  #grid ol{
+    padding-left:33px;
+  }
+  #article{
+    padding-left:25px;
+  }
+  </style>
 </head>
 <body>
   <h1><a href="index.html">WEB</a></h1>
-  <ol>
-    <li><a href="1.html">HTML</a></li>
-    <li><a href="2.html">CSS</a></li>
-    <li><a href="3.html">JavaScript</a></li>
-  </ol>
-  <h2>CSS</h2>
-  <p>
-    WordPress sites have an API by default. Wanna see this site’s most recent posts, with just a specific set of data… in JSON format? Here ya go. Alex Riviere made a joke site using that. At first, the site would fetch from that API client-side when it loaded. Fine, but if we take it seriously
-  </p>
+  <div id="grid">
+    <ol>
+      <li><a href="1.html">HTML</a></li>
+      <li><a href="2.html">CSS</a></li>
+      <li><a href="3.html">JavaScript</a></li>
+    </ol>
+    <div id="atricle">
+    <h2>CSS</h2>
+    <p>
+      WordPress sites have an API by default. Wanna see this site’s most recent posts, with just a specific set of data… in JSON format? Here ya go. Alex Riviere made a joke site using that. At first, the site would fetch from that API client-side when it loaded. Fine, but if we take it seriously
+    </p>
+  </div>
+</div>
 </body>
 </html>
